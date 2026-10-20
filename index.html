@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flashcard Study Tool</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Flashcard Study Tool</h1>
+
+    <div class="progress">
+      Card <span id="current-index">1</span> of <span id="total-cards">0</span>
+    </div>
+
+    <div class="card-container">
+      <div class="flashcard" id="flashcard">
+        <div class="card-face card-front">
+          <div class="label">Term</div>
+          <div class="content" id="term"></div>
+        </div>
+        <div class="card-face card-back">
+          <div class="label">Definition</div>
+          <div class="content" id="definition"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button id="prev-btn" class="btn">← Previous</button>
+      <button id="flip-btn" class="btn primary">Flip Card</button>
+      <button id="next-btn" class="btn">Next →</button>
+    </div>
+
+    <div class="extra-controls">
+      <button id="shuffle-btn" class="btn secondary">Shuffle</button>
+      <button id="reset-btn" class="btn secondary">Reset</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
